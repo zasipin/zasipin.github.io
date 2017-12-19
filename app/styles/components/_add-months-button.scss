@@ -1,0 +1,14 @@
+form.add-button-form {
+    label.middle, input[type=number]{
+        margin-bottom: 0;
+    }
+    input[type=button]{
+        border-radius: $border-radius;
+    }
+}
+
+.add-months-button-wrapper {
+    input[type=button]{
+        border-radius: $border-radius;
+    }
+}

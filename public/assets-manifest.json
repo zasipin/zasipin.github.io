@@ -1,0 +1,11 @@
+{
+  "0.bundle.js": "0.bundle.js",
+  "1.bundle.js": "1.bundle.js",
+  "app.css": "076e6697bdc65b22f376.styles.css",
+  "app.js": "076e6697bdc65b22f376.bundle.js",
+  "public\\fonts\\foundation-icons.eot": "public/fonts/foundation-icons.eot",
+  "public\\fonts\\foundation-icons.svg": "public/fonts/foundation-icons.svg",
+  "public\\fonts\\foundation-icons.ttf": "public/fonts/foundation-icons.ttf",
+  "sw.js": "./sw.js",
+  "vendor.js": "076e6697bdc65b22f376.vendor.js"
+}

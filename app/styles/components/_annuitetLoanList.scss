@@ -1,0 +1,75 @@
+.loan-list-wrapper
+{
+          /* Small only */
+          @media screen and (max-width: 39.9375em) {
+            padding: 0 0.25rem;
+            
+          }
+}
+
+table.loan-table {
+   
+    color: $light-green;
+    border: none;
+    line-height: 1.3;
+    font-size: $normal-font-size;
+    /* Small only */
+    @media screen and (max-width: 39.9375em) {
+      font-size: $normal-font-size-small_screen;
+    }
+    
+
+    thead {
+      color: $light-green;
+      background-color: $light-creme;
+      border-width: 0px;
+      border-color: $light-green;
+      border-bottom-width: 4px ;
+      
+      th {
+        word-wrap: break-word;
+        word-break: break-all;
+
+        /* Small only */
+        @media screen and (max-width: 39.9375em) {
+          padding: $small-screen-td-padding;
+        }
+      }
+
+    }
+
+    tbody {
+      border: none;
+    }
+
+    tr td {
+      background-color: $light-creme;
+      border-color: $light-green-line;
+      border-style: solid;
+      border-width: 0px;
+      border-bottom-width: 1px ;
+      padding-top: 0.2rem;
+      padding-bottom: 0.3rem;
+      
+      /* Small only */
+      @media screen and (max-width: 39.9375em) {
+        padding: $small-screen-td-padding;
+      }
+
+      .dark-text {
+        color: $textcolor;
+      }
+      .button{
+        margin: 0;
+      }
+    }       
+  
+  .small-text {
+        font-size: $small-font-size;
+        font-weight: 400;
+    }  
+
+  a.show-payments {
+    text-decoration: underline;
+  }
+}
