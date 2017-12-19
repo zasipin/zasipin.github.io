@@ -2,6 +2,7 @@
 
 var staticCacheName = 'crcalc-static-v4.7.7';
 var contentImgsCache = 'crcalc-content-imgs';
+var firstPage = '/mortage';
 var allCaches = [staticCacheName, contentImgsCache];
 
 self.addEventListener('install', function (event) {
@@ -12,7 +13,7 @@ self.addEventListener('install', function (event) {
     return fetch("assets-manifest.json").then(function (response) {
       return response.json();
     }).then(function (assets) {
-      return cache.addAll(["/", "/consumer", assets["vendor.js"], assets["app.js"], assets["app.css"], assets["0.bundle.js"], assets["1.bundle.js"], assets["2.bundle.js"], assets["public\\fonts\\foundation-icons.ttf"]]);
+      return cache.addAll(["/", firstPage, assets["vendor.js"], assets["app.js"], assets["app.css"], assets["0.bundle.js"], assets["1.bundle.js"], assets["2.bundle.js"], assets["public\\fonts\\foundation-icons.ttf"]]);
     }).catch(function (err) {});
   }).then(function () {
     //console.log('skipping wait');
@@ -35,7 +36,7 @@ self.addEventListener('activate', function (event) {
 self.addEventListener('fetch', function (event) {
   var requestUrl = new URL(event.request.url);
   var curUrl = new URL(requestUrl);
-  if (curUrl.pathname === '/consumer') {
+  if (curUrl.pathname === firstPage) {
     event.respondWith(caches.match('/'));
     return;
   }
