@@ -13,7 +13,7 @@ self.addEventListener('install', function (event) {
     return fetch("assets-manifest.json").then(function (response) {
       return response.json();
     }).then(function (assets) {
-      return cache.addAll(["/",
+      return cache.addAll(["./",
       // firstPage,
       assets["vendor.js"], assets["app.js"], assets["app.css"], assets["0.bundle.js"], assets["1.bundle.js"],
       // assets["2.bundle.js"],
@@ -43,7 +43,7 @@ self.addEventListener('fetch', function (event) {
   var requestUrl = new URL(event.request.url);
   var curUrl = new URL(requestUrl);
   if (curUrl.pathname === firstPage) {
-    event.respondWith(caches.match('/'));
+    event.respondWith(caches.match('./'));
     return;
   }
 
