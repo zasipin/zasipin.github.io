@@ -13,7 +13,9 @@ self.addEventListener('install', function (event) {
     return fetch("assets-manifest.json").then(function (response) {
       return response.json();
     }).then(function (assets) {
-      return cache.addAll(["/", firstPage, assets["vendor.js"], assets["app.js"], assets["app.css"], assets["0.bundle.js"], assets["1.bundle.js"],
+      return cache.addAll(["/",
+      // firstPage,
+      assets["vendor.js"], assets["app.js"], assets["app.css"], assets["0.bundle.js"], assets["1.bundle.js"],
       // assets["2.bundle.js"],
       assets["public\\fonts\\foundation-icons.ttf"]]);
     }).catch(function (err) {
