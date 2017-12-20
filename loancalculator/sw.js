@@ -14,7 +14,9 @@ self.addEventListener('install', function (event) {
       return response.json();
     }).then(function (assets) {
       return cache.addAll(["/", firstPage, assets["vendor.js"], assets["app.js"], assets["app.css"], assets["0.bundle.js"], assets["1.bundle.js"], assets["2.bundle.js"], assets["public\\fonts\\foundation-icons.ttf"]]);
-    }).catch(function (err) {});
+    }).catch(function (err) {
+      console.log(err);
+    });
   }).then(function () {
     //console.log('skipping wait');
     self.skipWaiting();
