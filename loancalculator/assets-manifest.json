@@ -1,11 +1,11 @@
 {
   "0.bundle.js": "0.bundle.js",
   "1.bundle.js": "1.bundle.js",
-  "app.css": "00f4de46ad6c5e55af44.styles.css",
-  "app.js": "00f4de46ad6c5e55af44.bundle.js",
+  "app.css": "045e2e7c457cae1f7d65.styles.css",
+  "app.js": "045e2e7c457cae1f7d65.bundle.js",
   "public\\fonts\\foundation-icons.eot": "public/fonts/foundation-icons.eot",
   "public\\fonts\\foundation-icons.svg": "public/fonts/foundation-icons.svg",
   "public\\fonts\\foundation-icons.ttf": "public/fonts/foundation-icons.ttf",
   "sw.js": "./sw.js",
-  "vendor.js": "00f4de46ad6c5e55af44.vendor.js"
+  "vendor.js": "045e2e7c457cae1f7d65.vendor.js"
 }
