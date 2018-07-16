@@ -1,6 +1,6 @@
 'use strict';
 
-var staticCacheName = 'crcalc-static-v4.7.8';
+var staticCacheName = 'crcalc-static-v4.7.9';
 var contentImgsCache = 'crcalc-content-imgs';
 var firstPage = '/mortage';
 var allCaches = [staticCacheName, contentImgsCache];
